@@ -1,0 +1,68 @@
+---
+type Laws = {
+    title: string;
+    subtitle: string;
+};
+
+const laws: Laws[] = [
+    {
+        title: "🏛️ UU No. 1 Tahun 1970",
+        subtitle:
+            "Tentang Keselamatan Kerja — mengatur kewajiban perusahaan dalam melindungi tenaga kerja dari risiko kecelakaan di tempat kerja.",
+    },
+    {
+        title: "📜 UU No. 13 Tahun 2003",
+        subtitle:
+            "Tentang Ketenagakerjaan — menjamin hak pekerja atas keselamatan, kesehatan, dan kesejahteraan selama bekerja.",
+    },
+    {
+        title: "⚖️ PP No. 50 Tahun 2012",
+        subtitle:
+            "Tentang Penerapan SMK3 — mewajibkan setiap perusahaan menerapkan sistem manajemen keselamatan dan kesehatan kerja secara menyeluruh.",
+    },
+    {
+        title: "🧾 Permenaker No. 5 Tahun 2018",
+        subtitle:
+            "Tentang Keselamatan dan Kesehatan Kerja Lingkungan mengatur kualitas udara, suhu, dan pencahayaan di tempat kerja.",
+    },
+    {
+        title: "🧤 Permenaker No. 8 Tahun 2010",
+        subtitle:
+            "Tentang Alat Pelindung Diri (APD) — mengatur jenis, standar, dan kewajiban penggunaan APD oleh pekerja.",
+    },
+    {
+        title: "🌍 ISO 45001:2018",
+        subtitle:
+            "Standar internasional manajemen K3 yang memastikan perusahaan memiliki sistem pengendalian risiko kerja yang efektif.",
+    },
+];
+---
+
+<div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        Landasan Hukum Keselamatan dan Kesehatan Kerja
+    </h2>
+    <p class="text-gray-600 mb-10 max-w-3xl mx-auto">
+        Penerapan sistem K3 di perusahaan kami berpedoman pada berbagai regulasi
+        nasional dan standar internasional untuk menjamin keselamatan tenaga
+        kerja.
+    </p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+        {
+            laws.map((law) => (
+                <div class="bg-white rounded-2xl p-6 shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">
+                        {law.title}
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-2">{law.subtitle}</p>
+                    <a
+                        href="#"
+                        class="text-blue-600 text-sm font-medium hover:underline"
+                    >
+                        Lihat Ringkasan →
+                    </a>
+                </div>
+            ))
+        }
+    </div>
+</div>

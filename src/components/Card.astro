@@ -1,0 +1,51 @@
+---
+type Cards = {
+    icon: string;
+    title: string;
+    subtitle: string;
+    url: string;
+};
+
+const cards: Cards[] = [
+    {
+        icon: "🦺",
+        title: "APD Lengkap",
+        subtitle:
+            "Kami memastikan seluruh pekerja memakai APD sesuai standar K3.",
+        url: "/peralatan",
+    },
+    {
+        icon: "⚙️",
+        title: "Prosedur Aman",
+        subtitle: "Seluruh proses produksi mengikuti SOP keselamatan kerja.",
+        url: "",
+    },
+    {
+        icon: "📊",
+        title: "Zero Accident Program",
+        subtitle: "Kami berkomitmen pada lingkungan kerja tanpa kecelakaan.",
+        url: "",
+    },
+    {
+        icon: "🏥",
+        title: "P3K Siaga 24 Jam",
+        subtitle: "Tim P3K selalu siap memberikan pertolongan pertama.",
+        url: "",
+    },
+];
+---
+
+{
+    cards.map((card) => (
+        <div class="card bg-base-100 w-80 shadow-md hover:shadow-lg transition-all">
+            <div class="card-body">
+                <div class="text-3xl">{card.icon}</div>
+                <h2 class="card-title">{card.title}</h2>
+                <p>{card.subtitle}</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-link">Selengkapnya -></button>
+                </div>
+            </div>
+        </div>
+    ))
+}
