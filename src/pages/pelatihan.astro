@@ -1,0 +1,149 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <section id="pelatihan" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2
+                class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4"
+            >
+                Pelatihan dan Edukasi K3
+            </h2>
+            <p class="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
+                Kami percaya bahwa pengetahuan adalah kunci keselamatan. Melalui
+                pelatihan rutin dan edukasi yang berkelanjutan, kami membangun
+                budaya kerja yang aman, disiplin, dan sadar risiko.
+            </p>
+
+            <!-- Jenis Pelatihan -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition"
+                >
+                    <div class="text-5xl mb-3 text-center">🧯</div>
+                    <h3
+                        class="text-xl font-bold text-blue-700 text-center mb-2"
+                    >
+                        Pelatihan Pemadam Kebakaran
+                    </h3>
+                    <p class="text-gray-600 text-sm text-center">
+                        Melatih karyawan menggunakan APAR dan prosedur evakuasi
+                        saat keadaan darurat.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition"
+                >
+                    <div class="text-5xl mb-3 text-center">🩺</div>
+                    <h3
+                        class="text-xl font-bold text-blue-700 text-center mb-2"
+                    >
+                        Pelatihan Pertolongan Pertama (P3K)
+                    </h3>
+                    <p class="text-gray-600 text-sm text-center">
+                        Memberikan keterampilan dasar dalam memberikan
+                        pertolongan pertama pada kecelakaan kerja.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition"
+                >
+                    <div class="text-5xl mb-3 text-center">⚙️</div>
+                    <h3
+                        class="text-xl font-bold text-blue-700 text-center mb-2"
+                    >
+                        Pelatihan Penggunaan Mesin Aman
+                    </h3>
+                    <p class="text-gray-600 text-sm text-center">
+                        Membekali operator dengan pengetahuan dan praktik aman
+                        saat mengoperasikan mesin produksi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Jadwal Pelatihan -->
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                Jadwal Pelatihan Terdekat
+            </h3>
+            <div class="overflow-x-auto mb-16">
+                <table
+                    class="w-full border border-gray-200 text-left rounded-xl overflow-hidden"
+                >
+                    <thead class="bg-blue-700 text-white">
+                        <tr>
+                            <th class="p-4">📅 Tanggal</th>
+                            <th class="p-4">📘 Nama Pelatihan</th>
+                            <th class="p-4">👥 Peserta</th>
+                            <th class="p-4">📍 Lokasi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">10 November 2025</td>
+                            <td class="p-4">Simulasi Kebakaran & Evakuasi</td>
+                            <td class="p-4">Seluruh Karyawan Produksi</td>
+                            <td class="p-4">Area Parkir Utama</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">17 November 2025</td>
+                            <td class="p-4">Pelatihan P3K Dasar</td>
+                            <td class="p-4">Tim P3K dan Petugas Shift</td>
+                            <td class="p-4">Ruang Pelatihan Lt.2</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">25 November 2025</td>
+                            <td class="p-4">Sosialisasi Penggunaan APD</td>
+                            <td class="p-4">Seluruh Pekerja Baru</td>
+                            <td class="p-4">Aula Utama</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Dokumentasi Pelatihan (Emoji Style) -->
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                📸 Dokumentasi Pelatihan
+            </h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition text-center"
+                >
+                    <div class="text-6xl mb-3">🔥</div>
+                    <h4 class="font-semibold text-blue-700 mb-1">
+                        Simulasi Pemadaman Kebakaran
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                        Peserta berlatih menggunakan APAR secara langsung.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition text-center"
+                >
+                    <div class="text-6xl mb-3">⛑️</div>
+                    <h4 class="font-semibold text-blue-700 mb-1">
+                        Pelatihan P3K Dasar
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                        Karyawan mempelajari langkah-langkah penanganan luka.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition text-center"
+                >
+                    <div class="text-6xl mb-3">🦺</div>
+                    <h4 class="font-semibold text-blue-700 mb-1">
+                        Sosialisasi Penggunaan APD
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                        Pelatihan pemakaian alat pelindung diri yang benar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

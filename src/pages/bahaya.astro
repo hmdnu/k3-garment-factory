@@ -1,0 +1,152 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <section id="bahaya" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2
+                class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center"
+            >
+                Identifikasi Bahaya dan Upaya Pencegahan
+            </h2>
+            <p class="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
+                Kami berkomitmen untuk mengidentifikasi setiap potensi bahaya di
+                lingkungan kerja dan menerapkan langkah pencegahan untuk
+                melindungi seluruh karyawan.
+            </p>
+
+            <!-- Tabel Bahaya -->
+            <div class="overflow-x-auto">
+                <table
+                    class="w-full border border-gray-200 text-left rounded-xl overflow-hidden"
+                >
+                    <thead class="bg-blue-700 text-white">
+                        <tr>
+                            <th class="p-4">Aktivitas Kerja</th>
+                            <th class="p-4">Potensi Bahaya</th>
+                            <th class="p-4">Tingkat Risiko</th>
+                            <th class="p-4">Langkah Pencegahan</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-medium text-gray-800"
+                                >Menjahit</td
+                            >
+                            <td class="p-4">Tangan tertusuk jarum mesin</td>
+                            <td class="p-4 text-yellow-600 font-semibold"
+                                >Sedang</td
+                            >
+                            <td class="p-4"
+                                >Gunakan pelindung jarum dan sarung tangan tipis
+                                saat bekerja.</td
+                            >
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-medium text-gray-800"
+                                >Pemotongan kain</td
+                            >
+                            <td class="p-4">Luka akibat pisau mesin potong</td>
+                            <td class="p-4 text-red-600 font-semibold"
+                                >Tinggi</td
+                            >
+                            <td class="p-4"
+                                >Gunakan sarung tangan anti-potong dan matikan
+                                mesin saat pergantian mata pisau.</td
+                            >
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-medium text-gray-800"
+                                >Pewarnaan kain</td
+                            >
+                            <td class="p-4"
+                                >Paparan uap bahan kimia berbahaya</td
+                            >
+                            <td class="p-4 text-red-600 font-semibold"
+                                >Tinggi</td
+                            >
+                            <td class="p-4"
+                                >Gunakan masker respirator, ventilasi baik, dan
+                                pelatihan bahan kimia.</td
+                            >
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-medium text-gray-800"
+                                >Pemintalan</td
+                            >
+                            <td class="p-4"
+                                >Kebisingan tinggi menyebabkan gangguan
+                                pendengaran</td
+                            >
+                            <td class="p-4 text-yellow-600 font-semibold"
+                                >Sedang</td
+                            >
+                            <td class="p-4"
+                                >Gunakan earplug/earmuff dan batas paparan
+                                kebisingan sesuai standar.</td
+                            >
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-medium text-gray-800"
+                                >Ruang boiler</td
+                            >
+                            <td class="p-4"
+                                >Risiko ledakan akibat tekanan berlebih</td
+                            >
+                            <td class="p-4 text-red-600 font-semibold"
+                                >Tinggi</td
+                            >
+                            <td class="p-4"
+                                >Lakukan inspeksi rutin, gunakan sensor tekanan,
+                                dan petugas bersertifikat.</td
+                            >
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Tips Pencegahan -->
+            <div class="mt-16 grid md:grid-cols-3 gap-6">
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition"
+                >
+                    <div class="text-5xl mb-3">🧤</div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-700">
+                        Gunakan APD Lengkap
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                        Selalu kenakan APD seperti masker, earplug, sarung
+                        tangan, dan sepatu safety di area kerja.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition"
+                >
+                    <div class="text-5xl mb-3">⚙️</div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-700">
+                        Rawat Mesin Secara Berkala
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                        Lakukan pemeriksaan dan perawatan rutin untuk mencegah
+                        kerusakan dan kecelakaan mesin.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition"
+                >
+                    <div class="text-5xl mb-3">🔥</div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-700">
+                        Siapkan Sistem Pemadam
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                        Pastikan APAR, detektor asap, dan jalur evakuasi
+                        berfungsi dengan baik setiap saat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
